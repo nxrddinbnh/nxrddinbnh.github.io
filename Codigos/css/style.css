@@ -11,7 +11,7 @@
 :root{
   --gradient-color: ;
   --primary-color: ;
-  --secondary-color #50555d;
+  --secondary-color: #50555d;
 }
 
 /* Establecer color de fondo y para todo el documento */
