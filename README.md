@@ -12,9 +12,9 @@ Hello and welcome to my creative world! I'm **Nourddin Benhadi**, a passionate p
 - After Effects
 
 ## 📫 How to reach me?
-- Instagram
+- [Instagram](https://www.instagram.com/NixiusGFX/)
 - [Linkedin](https://www.linkedin.com/in/nourddin-benhadi-35395426a/)
-- Behance
+- [Behance]()
 - [Personal Portfolio](http://nxrddinbnh.github.io/Codigos)
 
 <br>
