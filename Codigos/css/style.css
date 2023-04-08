@@ -9,8 +9,8 @@
 }
 
 :root{
-  --gradient-color: ;
-  --primary-color: ;
+  --gradient-color: linear-gradient(to right, #7179b8, #49fa70);
+  --primary-color: #505785;
   --secondary-color: #50555d;
 }
 
@@ -135,12 +135,12 @@ p {
 #name{
   background: linear-gradient(to right,#0dac9d,#00f965);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 #last-name{
   background: linear-gradient(to right,#6e79ba,#00b496);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .button-download {
   background-color: transparent;
@@ -198,7 +198,7 @@ img {
 #about-title h2 {
   margin-top: 5px;
   text-align: center;
-  background: linear-gradient(to right, #7179b8 47%, #49fa70 53%);
+  background: linear-gradient(90deg, #7179b8 47%, #49fa70 53%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -397,14 +397,16 @@ img {
 
 
 /* ------------------------------- QUINTA PAGINA: CONTACT ------------------------------- */
-#contacto {
+#contact-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
 }
 
-.contacto-container {
+.contact-container {
   display: flex;
   align-items: center;
   max-width: 1200px;
@@ -414,33 +416,30 @@ img {
   overflow: hidden;
 }
 
-.contacto-formulario {
+.contact-form {
   flex: 1;
   padding: 2rem;
 }
 
-.contacto-formulario h2 {
+.contact-form h2 {
   text-align: left;
-  font-size: 3rem;
-  background: linear-gradient(to right, #fff, #aaa);
+  background: linear-gradient(to right, #7179b8 47%, #49fa70 53%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.contacto-formulario p {
-  font-size: 1.5rem;
+.contact-form p {
   margin-bottom: 2rem;
+  color: var(--secondary-color);
 }
 
 .form-control {
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
-  padding: 1rem;
 }
 
 .form-control label {
   display: block;
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #fff;
 }
@@ -449,66 +448,116 @@ img {
 .form-control textarea {
   width: 100%;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 0.5rem;
-  color: #333;
-  border: none;
+  color: #d4d4d4;
+  border: 1px solid  #333;
+  background-color: #14141c;
 }
 
 .form-control textarea {
-  height: 10rem;
+  height: 9rem;
 }
 
 button[type="submit"] {
-  background-color: #fff;
-  color: #333;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 1rem 2rem;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  font-weight: 600;
+  font-size: 13.5px;
+  width: max-content;
+  padding: 1rem 1.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  background-color: #505785;
+  transition: 0.5s;
 }
 
 button[type="submit"]:hover {
-  background-color: #333;
-  color: #fff;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.7) 30%, #000 50%, rgba(0,0,0,.7) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1.2s infinite;
+}
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
-.contacto-sidebar {
+.contact-sidebar {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contacto-sidebar img {
-  max-width: 100%;
+.contact-sidebar img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
 
-.redes-sociales {
+.social-media {
+  margin-top: 15pt;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.redes-sociales a {
+.social-media a {
   display: block;
-  margin: 0 0.5rem;
-  font-size: 2rem;
-  color: #fff;
+  margin: 0 0.2rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
   transition: all 0.2s ease-in-out;
 }
 
-.redes-sociales a:hover {
+.social-media a:hover {
   transform: translateY(-0.2rem);
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.7) 30%, #000 50%, rgba(0,0,0,.7) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1.2s infinite;
+}
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
-.redes-sociales i {
-  padding: 0.5rem;
+.social-media i {
+  padding: 0.2rem;
+}
+
+
+/* ------------------------------- FOOTER ------------------------------- */
+footer {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  color: #2d3045;
+  font-size: 14px;
+}
+
+footer span {
+  color: #3e4261;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 
