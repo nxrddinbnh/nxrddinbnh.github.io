@@ -10,6 +10,9 @@
 	<title>Nourddin Bnh</title>
 </head>
 <body>
+
+	
+
 	<!---------------- HEADER ---------------->
 
 	<header>
@@ -35,6 +38,15 @@
 		</div>
 	</header>
 	<div class="main-container">
+
+		<div class="circles-container">
+			<a href="#home-section" class="circle-section"><div class="circle-inside"></div></a>
+			<a href="#about-section" class="circle-section"><div class="circle-inside"></div></a>
+			<a href="#project-section" class="circle-section"><div class="circle-inside"></div></a>
+			<a href="#skills-section" class="circle-section"><div class="circle-inside"></div></a>
+			<a href="#contact-section" class="circle-section"><div class="circle-inside"></div></a>
+		</div>
+
 		<!---------------- HOME ---------------->
 		<div id="home-section">
 			<div class="home-container">
@@ -62,7 +74,7 @@
 				</div>
 				<div id="about-notTilte">
 					<div class="about-left">
-						<img src="ruta/a/la/imagen.jpg" alt="">
+						<img src="../Archivos/png/vectorAbout.png" alt="">
 					</div>
 					<div id="about-right">
 						<div class="info-cuad">
@@ -139,7 +151,7 @@
 	    			</a>
 	  			</div>
   			</div>
-  			<button class="project-button">Ver Más</button>
+  			<a href="https://www.behance.net/nixiusdev" target="_blank"><button class="project-button">Ver Más</button></a>
   		</div>
 
   		<!---------------- CONTACT ---------------->
@@ -182,7 +194,7 @@
 
 	</div>
 
-
+	
 
 
 
@@ -229,11 +241,14 @@
 		a.forEach(item => {
 			item.addEventListener('mouseover', () => {
 				cursor.classList.add('hover');
+				cursorinner.classList.add('hide-cursor-inner');
 			});
 			item.addEventListener('mouseleave', () => {
 				cursor.classList.remove('hover');
+				cursorinner.classList.remove('hide-cursor-inner');
 			});
-		})
+		});
+
 	</script>
 
 </body>
