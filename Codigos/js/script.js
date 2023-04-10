@@ -1,14 +1,37 @@
-const projectItems = document.querySelectorAll('.project-item');
+var cursor = document.querySelector('.cursor1');
+var cursorinner = document.querySelector('.cursor2');
+var a = document.querySelectorAll('a');
 
-for (let i = 0; i < projectItems.length; i++) {
-  projectItems[i].addEventListener('click', function() {
-    if (this.classList.contains('fullscreen')) {
-      this.classList.remove('fullscreen');
-    } else {
-      this.classList.add('fullscreen');
-    }
-  });
-}
+document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
 
+document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursorinner.style.left = x + 'px';
+    cursorinner.style.top = y + 'px';
+});
 
+document.addEventListener('mousedown', function(){
+    cursor.classList.add('click');
+    cursorinner.classList.add('cursorinnerhover')
+});
 
+document.addEventListener('mouseup', function(){
+    cursor.classList.remove('click')
+    cursorinner.classList.remove('cursorinnerhover')
+});
+
+a.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('hover');
+        cursorinner.classList.add('hide-cursor-inner');
+    });
+    item.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        cursorinner.classList.remove('hide-cursor-inner');
+    });
+});
