@@ -4,71 +4,70 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" >
-	<title>Nourddin Bnh</title>
+	<title>Nourddin Benhadi</title>
 </head>
-<body>
+<body id="">
 
 	
 
 	<!---------------- HEADER ---------------->
-
 	<header>
 		<div class="logo">
-			<a href="#">NOURDDIN</a>
+			<a href="index.html" onclick="window.location.reload()">NOURDDIN</a>
 		</div>
 		<nav class="menu">
 			<ul>
-				<li><a href="#home-section" id="home-link">Inicio</a></li>
 				<li><a href="#about-section">Acerca de</a></li>
+				<li><a href="#experience-section">Experiencia</a></li>
 				<li><a href="#project-section">Portafolio</a></li>
-				<li><a href="#skills-section">Servicios</a></li>
 				<li><a href="#contact-section">Contacto</a></li>
 			</ul>
 		</nav>
 		<div class="right-menu">
-			<div class="news">
-				<a href="#">Novedades</a>
-			</div>
 			<div class="language">
 				<a href="#"><i class="fas fa-globe"></i></a>
+			</div>
+			<div class="cv-menu">
+				<a href="../Archivos/CV.jpg" class="button-cvMenu" target="_blank">Curriculum</a>
 			</div>
 		</div>
 	</header>
 	<div class="main-container">
 
-		<div class="circles-container">
-			<a href="#home-section" class="circle-section"><div class="circle-inside"></div></a>
-			<a href="#about-section" class="circle-section"><div class="circle-inside"></div></a>
-			<a href="#project-section" class="circle-section"><div class="circle-inside"></div></a>
-			<a href="#skills-section" class="circle-section"><div class="circle-inside"></div></a>
-			<a href="#contact-section" class="circle-section"><div class="circle-inside"></div></a>
+		<div class="socialMedia-menu">
+			<ul>
+				<li><a href="https://github.com/nxrddinbnh"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/nixiusgfx/"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/nourddin-benhadi-35395426a/"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="https://www.behance.net/nixiusdev"><i class="fab fa-behance"></i></a></li>
+			</ul>
+			<div class="verticalLine-menu"></div>
 		</div>
 
 		<!---------------- HOME ---------------->
 		<div id="home-section">
-			<div class="home-container">
-				<div class="left">
-					<h1>¡Hola! Soy <font id="name">Nourddin</font> <font id="last-name">Benhadi</font>,</h1>
-					<p>Diseñador Gráfico & Programador, y me encanta crear diseños que hagan que las personas digan '¡guau!'. Si quieres que tu proyecto tenga ese factor '¡guau!', ¡hablemos hoy!</p>
-					<nav class="button-nav">
-						<a href="../Archivos/CV.jpg" id="button-home" class="button-download" target="_blank">Descargar CV</a>
-						<a href="#contact-section" id="button-home" class="button-talk">Hablemos</a>
-					</nav>
-				</div>
-				<div class="right">
-					<img src="../Archivos/png/vectorPantalla.png" alt="">
-				</div>
+		<div class="home-container">
+			<div class="left">
+				<h1>¡Hola! Soy <font id="name">Nourddin</font> <font id="last-name">Benhadi</font>,</h1>
+				<p>Diseñador Gráfico & Programador, y me encanta crear diseños que hagan que las personas digan '¡guau!'. Si quieres que tu proyecto tenga ese factor '¡guau!', ¡hablemos hoy!</p>
+				<nav class="button-nav">
+					<a href="#project-section" id="button-home" class="button-download">Ver mi trabajo</a>
+					<a href="#contact-section" id="button-home" class="button-talk">Hablemos</a>
+				</nav>
 			</div>
+			<div class="right">
+				<img src="../Archivos/png/vectorPantalla.png" alt="">
+			</div>
+		</div>
 		</div>
 
 
 		<!---------------- ABOUT ---------------->
 		<div id="about-section">
 			<div class="about-container" style="margin: 30px;">
-				<div id="about-title">
+				<div id="sections-title">
 					<h2>Acerca de mi</h2>
 					<p>Descubre mi pasión</p>
 				</div>
@@ -77,179 +76,133 @@
 						<img src="../Archivos/png/vectorAbout.png" alt="">
 					</div>
 					<div id="about-right">
-						<div class="info-cuad">
-							<div id="icua"><i class="fa fa-briefcase"></i><br><br><h3>Experiencia</h3><p>+2 Años Trabajando</p></div>
-							<div id="icua"><i class="fa fa-users"></i></i><br><br><h3>Clientes</h3><p>+100 Satisfechos</p></div>
-							<div id="icua"><i class="fa fa-folder-open"></i></i></i><br><br><h3>Proyectos</h3><p>+20 Completado</p></div>
-						</div>
 						<div id="about-text">
-							<p>Como diseñador gráfico y programador, he tenido el privilegio de trabajar con diversos clientes y proyectos durante el último año. Cada experiencia ha sido una oportunidad de aprendizaje y crecimiento, y me ha permitido perfeccionar mis habilidades y desarrollar una mentalidad más creativa. Lo que más me motiva es poder crear soluciones visuales atractivas y efectivas que ayuden a las personas a comunicar sus mensajes de manera clara y efectiva. Siempre estoy buscando nuevos desafíos y oportunidades para aprender y mejorar, porque para mí, la creatividad es una pasión que nunca se agota.</p>
-							<button class="about-button">Saber Más</button>
+							<p>¡Hola, hola, hola! Soy <span class="textAbout-gradientAnimation">Nourddin Benhadi</span>. Me encanta crear cosas que cobran vida en Internet y poner mi granito de arena en hacer del mundo digital un lugar más amigable e inclusivo. Mi curiosidad por la creación web comenzó en 2021, cuando me di cuenta lo divertido que era editar diseños en Photoshop. Fue entonces cuando me sumergí en el aprendizaje de HTML y CSS.<br><br>
+								Desde entonces, he tenido la fortuna de colaborar con diversos clientes, quienes han quedado satisfechos con mis diseños y me han inspirado a seguir innovando en mi trabajo. En los últimos tiempos, he estado enfocado en crear diseños personalizados para redes sociales, incluyendo stream packs para plataformas como Twitch. Esta experiencia me ha permitido explorar mi creatividad al máximo y ofrecer a mis clientes soluciones únicas y de calidad.<br><br>
+								He estado repartiendo stream packs gratis como si fueran caramelos en Halloween. ¡Sígueme en las redes para no perderte la próxima gran golosina de diseño que tenga preparada!<br><br>
+								Aquí hay una muestra de lo que puedo hacer:
+								<ul class="technologies">
+									<li><i class="bi bi-check"></i>HTML</li>
+									<li><i class="bi bi-check"></i>Photoshop</li>
+									<li><i class="bi bi-check"></i>Stream Pack</li>
+									<li><i class="bi bi-check"></i>CSS</li>
+									<li><i class="bi bi-check"></i>After Effects</li>
+									<li><i class="bi bi-check"></i>Banner / Header</li>
+									<li><i class="bi bi-check"></i></li>
+									<li><i class="bi bi-check"></i>Blender</li>
+									<li><i class="bi bi-check"></i>Logos</li>
+								</ul>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!---------------- EXPERIENCE ---------------->
+		<div id="experience-section">
+			<div id="sections-title">
+				<h2>Mi experiencia</h2>
+				<p>Lugares donde dejé mi huella</p>
+			</div>
+		</div>
 
 		<!---------------- PROJECT ---------------->
-	
-
 		<div id="project-section">
-			<div id="project-title">
+			<div id="sections-title">
 				<h2>Portafolio</h2>
 				<p>Algunos Diseños</p>
 			</div>
-			<div class="project-container">
-			  	<div class="project-item">
-			    	<a href="../Archivos/Diseños/Stream Pack/3.jpg" target="_blank">
-			    		<img src="../Archivos/Diseños/Stream Pack/3.jpg" alt="">
-			    	</a>
-			  	</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Stream Pack/Animado/1.mp4" target="_blank">
-	    				<video autoplay loop muted>
-	      					<source src="../Archivos/Diseños/Stream Pack/Animado/1.mp4" type="video/mp4">
-	    				</video>
-	    			</a>
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Stream Pack/4.jpg" target="_blank"><img src="../Archivos/Diseños/Stream Pack/4.jpg" alt=""></a>
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Stream Pack/Animado/3.mp4" target="_blank">
-	    				<video autoplay loop muted>
-	      					<source src="../Archivos/Diseños/Stream Pack/Animado/3.mp4" type="video/mp4">
-	    				</video>
-	    			</a>
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Banner/4.jpg" target="_blank">
-	    				<img src="../Archivos/Diseños/Banner/4.jpg" alt="">
-	    			</a>
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Header/1.jpg" target="_blank">
-	    				<img src="../Archivos/Diseños/Header/1.jpg" alt="">
-	    			</a>
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Stream Pack/Animado/2.mp4" target="_blank">
-	    				<video autoplay loop muted>
-	      					<source src="../Archivos/Diseños/Stream Pack/Animado/2.mp4" type="video/mp4">
-	    				</video>
-	    			</a>
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Header/2.jpg" target="_blank">
-	    				<img src="../Archivos/Diseños/Header/2.jpg" alt="">
-	    			</a>	
-	  			</div>
-	  			<div class="project-item">
-	    			<a href="../Archivos/Diseños/Stream Pack/2.jpg" target="_blank">
-	    				<img src="../Archivos/Diseños/Stream Pack/2.jpg" alt="">
-	    			</a>
-	  			</div>
-  			</div>
-  			<a href="https://www.behance.net/nixiusdev" target="_blank"><button class="project-button">Ver Más</button></a>
-  		</div>
+			<div class="img-gallery">
+				<a href="../Archivos/Diseños/Stream Pack/3.jpg" target="_blank">
+					<img src="../Archivos/Diseños/Stream Pack/3.jpg" alt="">
+				</a>
+				<a href="../Archivos/Diseños/Stream Pack/4.jpg" target="_blank">
+					<img src="../Archivos/Diseños/Stream Pack/4.jpg" alt="">
+				</a>
+				<a href="../Archivos/Diseños/Stream Pack/Animado/1.mp4" target="_blank">
+					<video autoplay loop muted>
+						<source src="../Archivos/Diseños/Stream Pack/Animado/1.mp4" type="video/mp4">
+					</video>
+				</a>
+				<a href="../Archivos/Diseños/Stream Pack/Animado/3.mp4" target="_blank">
+					<video autoplay loop muted>
+					<source src="../Archivos/Diseños/Stream Pack/Animado/3.mp4" type="video/mp4">
+					</video>
+				</a>
+				<a href="../Archivos/Diseños/Banner/4.jpg" target="_blank">
+					<img src="../Archivos/Diseños/Banner/4.jpg" alt="">
+				</a>
+				<a href="../Archivos/Diseños/Header/1.jpg" target="_blank">
+					<img src="../Archivos/Diseños/Header/1.jpg" alt="">
+				</a>
+				<a href="../Archivos/Diseños/Stream Pack/Animado/2.mp4" target="_blank">
+					<video autoplay loop muted>
+						<source src="../Archivos/Diseños/Stream Pack/Animado/2.mp4" type="video/mp4">
+					</video>
+				</a>
+				<a href="../Archivos/Diseños/Header/2.jpg" target="_blank">
+					<img src="../Archivos/Diseños/Header/2.jpg" alt="">
+				</a>
+				<a href="../Archivos/Diseños/Stream Pack/2.jpg" target="_blank">
+					<img src="../Archivos/Diseños/Stream Pack/2.jpg" alt="">
+				</a>
+			</div>
+			<a href="https://www.behance.net/nixiusdev" target="_blank"><button class="project-button">Ver Más</button></a>
+		</div>
 
-  		<!---------------- CONTACT ---------------->
-
-  		<section id="contact-section">
-  			<div class="contact-container">
-  				<div class="contact-form">
-  					<h2>Contacto</h2>
-  					<p>¿Tienes alguna pregunta o comentario? ¡Déjame un mensaje!</p>
-  					<form>
-  						<div class="form-control">
-  							<label for="name">Nombre</label>
-  							<input type="text" placeholder="Escriba su nombre" required>
-  						</div>
-  						<div class="form-control">
-  							<label for="email">Email</label>
-  							<input type="email" placeholder="Escriba su correo electrónico" required>
-  						</div>
-  						<div class="form-control">
-  							<label for="message">Mensaje</label>
-  							<textarea placeholder="Escriba su mensaje" required></textarea>
-  						</div>
-  						<button type="submit">Enviar Mensaje</button>
-  					</form>
-  				</div>
-  				<div class="contact-sidebar">
-  					<img src="../Archivos/logoNixiusIG.jpg">
-  					<div class="social-media">
-  						<a href="https://www.instagram.com/nixiusgfx/"><i class="fab fa-instagram"></i></a>
-  						<a href="https://github.com/nxrddinbnh"><i class="fab fa-github"></i></a>
-  						<a href="https://www.behance.net/nixiusdev"><i class="fab fa-behance"></i></a>
-  						<a href="https://www.linkedin.com/in/nourddin-benhadi-35395426a/"><i class="fab fa-linkedin"></i></a>
-  					</div>
-  				</div>
-  			</div>
-  		</section>
+		<!---------------- CONTACT ---------------->
+		<section id="contact-section">
+			<div class="contact-container">
+				<div class="contact-form">
+					<div id="sections-title">
+						<h2>Contacto</h2>
+						<p>¿Tienes alguna pregunta o comentario? ¡Déjame un mensaje!</p>
+					</div>
+					<form>
+						<div class="form-control">
+							<label for="name">Nombre</label>
+							<input type="text" placeholder="Escriba su nombre" required>
+						</div>
+						<div class="form-control">
+							<label for="email">Email</label>
+							<input type="email" placeholder="Escriba su correo electrónico" required>
+						</div>
+						<div class="form-control">
+							<label for="message">Mensaje</label>
+							<textarea placeholder="Escriba su mensaje" required></textarea>
+						</div>
+						<button type="submit">Enviar Mensaje</button>
+					</form>
+				</div>
+				<div class="contact-sidebar">
+					<img src="../Archivos/logoNixiusIG.jpg">
+				</div>
+			</div>
+		</section>
 
 
 
 
 	</div>
 
-	
+
 
 
 
 
 	<!---------------- FOOTER ---------------->
 	<footer>
-		<div class="footer-container">
-			<p>&copy; 2022 Todos los derechos reservados - <span>Nourddin Benhadi</span></p>
-		</div>
+	<div class="footer-container">
+	<p>&copy; 2022 Todos los derechos reservados - <span>Nourddin Benhadi</span></p>
+	</div>
 	</footer>
 
 	<!---------------- OTROS ---------------->
 	<div class="cursor1"></div>
 	<div class="cursor2"></div>
 
-	<script type="text/javascript">
-		var cursor = document.querySelector('.cursor1');
-		var cursorinner = document.querySelector('.cursor2');
-		var a = document.querySelectorAll('a');
-
-		document.addEventListener('mousemove', function(e){
-			var x = e.clientX;
-			var y = e.clientY;
-			cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-		});
-
-		document.addEventListener('mousemove', function(e){
-			var x = e.clientX;
-			var y = e.clientY;
-			cursorinner.style.left = x + 'px';
-			cursorinner.style.top = y + 'px';
-		});
-
-		document.addEventListener('mousedown', function(){
-			cursor.classList.add('click');
-			cursorinner.classList.add('cursorinnerhover')
-		});
-
-		document.addEventListener('mouseup', function(){
-			cursor.classList.remove('click')
-			cursorinner.classList.remove('cursorinnerhover')
-		});
-
-		a.forEach(item => {
-			item.addEventListener('mouseover', () => {
-				cursor.classList.add('hover');
-				cursorinner.classList.add('hide-cursor-inner');
-			});
-			item.addEventListener('mouseleave', () => {
-				cursor.classList.remove('hover');
-				cursorinner.classList.remove('hide-cursor-inner');
-			});
-		});
-
-	</script>
-
+	
 </body>
+	<script src="js/script.js"></script>
 </html>
