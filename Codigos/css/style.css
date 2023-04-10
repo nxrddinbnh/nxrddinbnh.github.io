@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 * {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   cursor: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -57,6 +59,7 @@ header {
   top: 0;
   background: rgba(13, 13, 21, 0.93);
   backdrop-filter: blur(20px);
+  z-index: 1;
 }
 
 .logo a {
