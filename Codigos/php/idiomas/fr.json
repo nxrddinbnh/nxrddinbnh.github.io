@@ -1,0 +1,46 @@
+{
+	"menu":{
+		"menu_acerca" : "About",
+		"menu_experiencia" : "Expérience",
+		"menu_portafolio" : "Travail",
+		"menu_contacto" : "Contact"
+	},
+	"home":{
+		"home_saludo" :"Bonjour! Ici",
+		"home_parrafo" : "Designer Graphique & Programmeur, et j'aime créer des designs qui font dire aux gens 'wow!'. Si vous voulez que votre projet ait ce facteur 'wow', parlons-en aujourd'hui!",
+		"home_botonTrabajo" : "Voir mon travail",
+		"home_botonHablar" : "Parlons-en"
+	},
+	"about":{
+		"about_titulo": "À propos de moi",
+		"about_tituloSegundo": "Découvrez ma passion",
+		"about_saludo": "Bonjour et bonsoir! Je suis ",
+		"about_texto": ". J'aime trop créer des choses qui prennent vie sur internet et contribuer à rendre le monde numérique plus convivial et inclusif. Ma curiosité pour la création web a commencé en 2021 lorsque j'ai réalisé à quel point c'était amusant de modifier des designs dans Photoshop. C'est à ce moment-là que j'ai plongé dans l'apprentissage du HTML et du CSS.",
+		"about_texto2": "Depuis lors, j'ai eu la chance de collaborer avec divers clients, qui ont été satisfaits de mes designs et m'ont inspiré à continuer à innover dans mon travail. Dernièrement, je me suis concentré sur la création de designs personnalisés pour les réseaux sociaux, y compris des packs de streaming pour des plateformes comme Twitch. Cette expérience m'a permis d'explorer ma créativité au maximum et d'offrir à mes clients des solutions uniques et de qualité.",
+		"about_texto3": "J'ai distribué des packs de streaming gratuits comme des bonbons d'Halloween. Suivez-moi sur les réseaux sociaux pour ne pas manquer le prochain grand bonbon de design que j'ai prévu!",
+		"about_texto4": "Voici un échantillon de ce que je peux faire:"
+	},
+	"experience":{
+		"experience_titulo": "Mon expérience",
+		"experience_tituloSegundo": "Les endroits où j'ai laissé ma trace"
+	},
+	"project":{
+		"project_titulo": "Portfolio",
+		"project_tituloSegundo": "Quelques designs",
+		"project_botonVermas": "Voir plus"
+	},
+	"contact":{
+		"contact_titulo": "Contact",
+		"contact_tituloSegundo": "Avez-vous des questions ou des commentaires? Laissez-moi un message!",
+		"contact_nombre": "Nom",
+		"contact_nombreLabel": "Écrivez votre nom",
+		"contact_email": "Email",
+		"contact_emailLabel": "Écrivez votre adresse e-mail",
+		"contact_mensaje": "Message",
+		"contact_mensajeLabel": "Écrivez votre message",
+		"contact_enviar": "Envoyer"
+	},
+	"footer":{
+		"footer_derechos": "2023 Tous droits réservés - "
+	}
+}

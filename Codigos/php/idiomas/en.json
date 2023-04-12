@@ -1,0 +1,46 @@
+{
+	"menu":{
+		"menu_acerca" : "About",
+		"menu_experiencia" : "Experience",
+		"menu_portafolio" : "Work",
+		"menu_contacto" : "Contact"
+	},
+	"home":{
+		"home_saludo" : "Hello! I'm",
+		"home_parrafo" : "Graphic Designer & Programmer, and I love creating designs that make people say 'wow!'. If you want your project to have that 'wow' factor, let's talk today!",
+		"home_botonTrabajo" : "See my work",
+		"home_botonHablar" : "Let's Talk"
+	},
+	"about":{
+		"about_titulo": "About me",
+		"about_tituloSegundo": "Discover my passion",
+		"about_saludo": "Good afternoon, evening and morning! I am ",
+		"about_texto": ". I love creating things that come to life on the internet and contributing to making the digital world a more friendly and inclusive place. My curiosity for web creation began in 2021 when I realized how much fun it was to edit designs in Photoshop. That's when I delved into learning HTML and CSS.",
+		"about_texto2": "Since then, I have been fortunate enough to collaborate with various clients, who have been satisfied with my designs and have inspired me to keep innovating in my work. Lately, I have been focused on creating custom designs for social media, including stream packs for platforms like Twitch. This experience has allowed me to explore my creativity to the fullest and offer my clients unique and high-quality solutions.",
+		"about_texto3": "I've been giving away free stream packs like Halloween candy. Follow me on social media so you don't miss the next big design treat I have in store!",
+		"about_texto4": "Here's a sample of what I can do:"
+	},
+	"experience":{
+		"experience_titulo": "My experience",
+		"experience_tituloSegundo": "Places where I left my mark"
+	},
+	"project":{
+		"project_titulo": "Portfolio",
+		"project_tituloSegundo": "Some designs",
+		"project_botonVermas": "See more"
+	},
+	"contact":{
+		"contact_titulo": "Contact",
+		"contact_tituloSegundo": "Do you have any questions or comments? Leave me a message!",
+		"contact_nombre": "Name",
+		"contact_nombreLabel": "Write your name",
+		"contact_email": "Email",
+		"contact_emailLabel": "Write your email address",
+		"contact_mensaje": "Message",
+		"contact_mensajeLabel": "Write your message",
+		"contact_enviar": "Send"
+	},
+	"footer":{
+		"footer_derechos": "2023 All rights reserved - "
+	}
+}
