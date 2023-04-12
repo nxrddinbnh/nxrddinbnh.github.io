@@ -15,7 +15,7 @@ Hello and welcome to my creative world! I'm **Nourddin Benhadi**, a passionate p
 - [Instagram](https://www.instagram.com/NixiusGFX/)
 - [Linkedin](https://www.linkedin.com/in/nourddin-benhadi-35395426a/)
 - [Behance](https://www.behance.net/nixiusdev)
-- [Personal Portfolio](https://nourddinbnh.000webhostapp.com)
+- [Personal Portfolio](https://nxrddinbnh.github.io/Codigos/) (with github)
 
 <br>
 
