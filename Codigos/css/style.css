@@ -7,6 +7,8 @@
   --sectionMenu-color: #777e87;
   --bodyBackground-color: #0d0d15;
   --backgroundLight-color: #14141c;
+  --shadow-color: rgba(0,0,0,0.8);
+  --backgroundBlur-color: rgba(13, 13, 21, 0.8);
 }
 
 * {
@@ -16,6 +18,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding:0;
+  margin:0;
 }
 
 html{
@@ -29,6 +33,7 @@ body {
 
 .main-container {
   max-width: 1400px; /* Ancho máximo del contenedor */
+  min-width: 355px;
   margin: 0 auto; /* Centrar el contenedor horizontalmente */
   display: flex; /* Usar flexbox para alinear verticalmente */
   flex-direction: column; /* Alinear verticalmente */
@@ -55,7 +60,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 14.5px 40px;
   background: rgba(13, 13, 21, 0.93);
   backdrop-filter: blur(20px);
   z-index: 1;
@@ -75,8 +80,6 @@ header {
 .menu ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .menu li {
@@ -89,10 +92,6 @@ header {
   font-size: 10pt;
   font-weight: bold;
   transition: 0.15s;
-}
-
-.menu a:hover{
-  color: #fff;
 }
 
 .right-menu {
@@ -187,6 +186,10 @@ header {
   padding: 8px;
 }
 
+.menu a:hover, .languageDropdown-section i:hover{
+  color: #fff;
+}
+
 .languageDropdown-section:hover .dropdownLanguage-content {
   visibility: visible;
 }
@@ -276,7 +279,7 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px;
+  margin: 30px;
 }
 
 .left {
@@ -305,6 +308,9 @@ p {
   background: linear-gradient(to right,#6e79ba,#00b496);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.button-container {
+  display: flex;
 }
 .button-download {
   background-color: transparent;
@@ -460,8 +466,6 @@ img {
 
 
 /* ========================================= TERCERA PAGINA: PROJECT ========================================= */
-
-
 #project-section {
   display: flex;
   flex-direction: column;
@@ -559,8 +563,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-  padding-right: 15rem;
-  padding-left: 15rem;
 }
 
 .contact-container {
@@ -600,7 +602,7 @@ img {
 
 .form-control input,
 .form-control textarea {
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -724,6 +726,7 @@ a:hover ~ .cursor2{
   opacity: 0;
 }
 
+
 /* ========================================= ADAPTACION PARA DISPOSITIVOS ========================================= */
 /**Movil**/
 @media (max-width: 767px){
@@ -743,10 +746,6 @@ a:hover ~ .cursor2{
     display: none;
   }
 
-  .left{
-    padding-right: 0;
-  }
-
   .left h1{
     font-size: 2.34rem;
   }
@@ -763,16 +762,6 @@ a:hover ~ .cursor2{
   .img-gallery video{
     width: 355px;
     height: 186px;
-  }
-
-  #contact-section{
-    padding-right: 0rem;
-    padding-left: 0rem;
-  }
-
-  .form-control input,
-  .form-control textarea {
-    width: ;
   }
 
   /*------------- EL MENU PARA MOVILES HAMB -------------*/
@@ -948,14 +937,18 @@ a:hover ~ .cursor2{
     cursor: text;
   }
 
-  .contact-sidebar, .cursor1, .cursor2, #menu-desplegable{
+  #home-section{
+    margin-top: 5rem;
+  }
+
+  .contact-sidebar, .cursor1, .cursor2, #menu-hamb, .menuHamb-container, .about-left{
     display: none;
   }
 
-  .form-control input,
-  .form-control textarea {
-    width: 99%;
+  #about-notTilte{
+    display: block;
   }
+
 }
 
 /**Escritorio**/
