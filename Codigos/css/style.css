@@ -552,6 +552,7 @@ img {
 .ful-img video{
   width: 90%;
   max-width: 600px;
+  min-width: 300;
 }
 
 
@@ -760,8 +761,8 @@ a:hover ~ .cursor2{
 
   .img-gallery img,
   .img-gallery video{
-    width: 355px;
-    height: 186px;
+    width: 85%;
+    height: auto;
   }
 
   /*------------- EL MENU PARA MOVILES HAMB -------------*/
@@ -891,6 +892,7 @@ a:hover ~ .cursor2{
     right: 0;
     bottom: 0;
     padding: 50px 10px;
+    height: 100vw;
     width: min(75vw, 400px);
     background-color: var(--backgroundBlur-color);
     backdrop-filter: blur(20px);
@@ -941,7 +943,7 @@ a:hover ~ .cursor2{
     margin-top: 5rem;
   }
 
-  .contact-sidebar, .cursor1, .cursor2, #menu-hamb, .menuHamb-container, .about-left{
+  .contact-sidebar, .cursor1, .cursor2, #menu-hamb, .menuHamb-container, .about-left, .socialMedia-menu{
     display: none;
   }
 
