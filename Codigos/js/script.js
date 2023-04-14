@@ -35,3 +35,25 @@ a.forEach(item => {
         cursorinner.classList.remove('hide-cursor-inner');
     });
 });
+
+
+// Lenguages para movil
+const languageToggle = document.getElementById('language-toggle');
+const languageDropdown = document.getElementById('language-dropdown');
+
+languageToggle.addEventListener('click', function() {
+  languageDropdown.classList.toggle('active');
+});
+
+// hamb menu
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
