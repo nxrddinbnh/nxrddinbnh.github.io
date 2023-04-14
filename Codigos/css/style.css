@@ -724,4 +724,243 @@ a:hover ~ .cursor2{
   opacity: 0;
 }
 
+/* ========================================= ADAPTACION PARA DISPOSITIVOS ========================================= */
+/**Movil**/
+@media (max-width: 767px){
+  *{
+    cursor: default;
+  }
 
+  nav a, .logo, .languageDropdown-section i, .img-gallery img, .img-gallery video, button{
+    cursor: pointer;
+  }
+
+  .contact-form textarea, .contact-form input{
+    cursor: text;
+  }
+  
+  header, .contact-sidebar, .cursor1, .cursor2, .right, .about-left, .cv-menu, .socialMedia-menu{
+    display: none;
+  }
+
+  .left{
+    padding-right: 0;
+  }
+
+  .left h1{
+    font-size: 2.34rem;
+  }
+
+  #home-section{
+    margin-top: 5rem;
+  }
+
+  #about-notTilte{
+    display: block;
+  }
+
+  .img-gallery img,
+  .img-gallery video{
+    width: 355px;
+    height: 186px;
+  }
+
+  #contact-section{
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    width: ;
+  }
+
+  /*------------- EL MENU PARA MOVILES HAMB -------------*/
+  /* Estilos del logotipo */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  /* Estilos del contenedor de idiomas */
+  .language-container {
+    text-align: center;
+    position: relative;
+    bottom: 4px;
+  }
+
+  /* Estilos del menú de idiomas */
+  .languageDropdown-section {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5em;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .languageDropdown-section:first-child {
+    margin-left: 0;
+  }
+
+  .dropdownLanguage-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    padding: 0;
+    list-style: none;
+    background-color: var(--bodyBackground-color);
+    border-radius: 0 0 5px 5px;
+  }
+
+  .dropdownLanguage-content li {
+    text-align: center;
+  }
+
+  .dropdownLanguage-content li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem;
+  }
+
+  #language-dropdown.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Estilos del menú hamburguesa */
+  #menuHamb-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-hamb {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--backgroundBlur-color);
+    backdrop-filter: blur(20px);
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu i,
+  .cerrar-menu i {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .cerrar-menu i{
+    position: relative;
+    margin-right: -17rem;
+  }
+
+  .cerrar-menu {
+    margin-right: 1rem;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px 10px;
+    width: min(75vw, 400px);
+    background-color: var(--backgroundBlur-color);
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0px 30px -15px rgba(0, 0, 0, .8);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-cvMenu2 {
+    display: flex;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    padding: 0.75rem 1rem;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+}
+
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px){
+  *{
+    cursor: default;
+  }
+
+  nav a, .logo, .languageDropdown-section i, .img-gallery img, .img-gallery video, button{
+    cursor: pointer;
+  }
+
+  .contact-form textarea, .contact-form input{
+    cursor: text;
+  }
+
+  .contact-sidebar, .cursor1, .cursor2, #menu-desplegable{
+    display: none;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    width: 99%;
+  }
+}
+
+/**Escritorio**/
+@media (min-width: 991px){
+  #menu-hamb, .menuHamb-container{
+    display: none; 
+  }
+}
