@@ -41,6 +41,43 @@
 		</div>
 	</header>
 
+	<div id="menu-hamb">
+		<div class="logo">
+			<a href="index.html" onclick="window.location.reload()">NOURDDIN</a>
+		</div>
+
+		<div id="menuHamb-right">
+			<div class="language-container">
+				<div class="languageDropdown-section">
+					<a href="#" id="language-toggle"><i class="fas fa-globe" style="margin-top: 10px;"></i></a>
+					<ul class="dropdownLanguage-content" id="language-dropdown">
+						<li><a href="php/lang.php?idk=en">EN</a></li>
+						<li><a href="php/lang.php?idk=fr">FR</a></li>
+						<li><a href="php/lang.php?idk=es">ES</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="menuHamb-container">
+				<button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+				<nav class="nav" id="nav">
+					<button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+					<div class="itemsDes-menuHamb">
+						<ul class="nav-list">
+							<li><a href="#"><?php echo $palabras['menu']['menu_acerca']; ?></a></li>
+							<li><a href="#"><?php echo $palabras['menu']['menu_experiencia']; ?></a></li>
+							<li><a href="#"><?php echo $palabras['menu']['menu_portafolio']; ?></a></li>
+							<li><a href="#"><?php echo $palabras['menu']['menu_contacto']; ?></a></li>
+						</ul>
+						<div class="cv-menu2">
+							<a href="../Archivos/CV.jpg" class="button-cvMenu2" target="_blank">Curriculum</a>
+						</div>
+					</div> 
+				</nav>
+			</div>
+		</div>
+	</div>
+
 	<div class="main-container">
 
 		<div class="socialMedia-menu">
