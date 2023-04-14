@@ -892,7 +892,7 @@ a:hover ~ .cursor2{
     right: 0;
     bottom: 0;
     padding: 50px 10px;
-    height: 100vw;
+    height: 200vw;
     width: min(75vw, 400px);
     background-color: var(--backgroundBlur-color);
     backdrop-filter: blur(20px);
